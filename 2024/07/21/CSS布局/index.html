@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>
       
-        Hello World | Map And Art
+        CSS布局 | Map And Art
       
     </title>
     <meta name="description" content="Find The ArtWorld In Cartography" />
@@ -146,13 +146,13 @@
   <article class="post-content">
     <div class="post-inner">
       <div class="post-content__head">
-        <div class="post-title">Hello World</div>
+        <div class="post-title">CSS布局</div>
         <div class="post-info">
           
   
 
 
-          <span class="post-date">2024-07-18</span>
+          <span class="post-date">2024-07-21</span>
         </div>
       </div>
       
@@ -162,19 +162,9 @@
             
           </div>
         
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>CSS布局学习<br>一、常规布局<br>1.显示方式<br>(1) box-sizing属性<br>box-sizing: content-box<br>content-box 为默认值，标准模式解析。在该模式下，border, padding, height|width 各自独立。<br>box-sizing: border-box<br>border-box 怪异模式解析。该模式下， border和padding 包含在 height|width。</p>
+<p>2.溢出处理<br>(2) text-overflow 设置文本溢出显示，使用块级元素<br>clip: 默认值，当内联内容溢出块容器时，将溢出部分裁剪掉。<br>ellipsis: 将溢出部分替换为(…)。</p>
+<p>二、布局方式<br>1.流动布局<br>默认布局，流动布局两个特征<br>(1) 块状元素，自上而下堆叠分布，宽度默认100%。<br>(2) 行内元素，自左而右水平分布，类似文本流，超过一行会换行。<br>2.定位布局<br>position: static | absolute | relative | fixed | sticky<br>static: 该关键字指定元素使用正常的布局行为，即遵循流动布局。此时 top, right, bottom, left, z-index 属性无效。<br>absolute: 绝对定位，元素会移出正常文档流，并不为元素预留空间。top, right, bottom, left, margin 有效。<br>relative: 相对定位， 为元素预留空间。top, right, bottom, left, margin 有效。<br>fixed: 元素会被移出正常文档流，并不为元素预留空间。<br>       通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。top, right, bottom, left, margin 有效。<br>sticky: 元素根据正常文档流进行定位，然后相对它的最近滚动祖先，基于 top、right、bottom 和 left 的值进行偏移。<br>        一个 sticky 元素会“固定”在离它最近的一个拥有“滚动机制”的祖先上（当该祖先的 overflow 是 hidden、scroll、auto 或 overlay 时），即便这个祖先不是最近的真实可滚动祖先。<br>        这有效地抑制了任何“sticky”行为</p>
 
       </div>
     </div>
