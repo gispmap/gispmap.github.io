@@ -37,7 +37,7 @@
       
   <style>
     @font-face {
-        font-family:sourceHanSerif;
+        font-family:normal;
         src: url(/font/normal.ttf);
         font-weight: normal;
     }
@@ -45,7 +45,7 @@
 
   <style>
     @font-face {
-        font-family:sourceHanSerif;
+        font-family:normal;
         src: url(/font/bold.ttf);
         font-weight: bold;
     }
@@ -224,7 +224,7 @@
             <div class="radio">
               <input id="radio-article"
                      type="checkbox"
-                     />
+                     checked/>
               <label class="radio-skin--article" for="radio-article"></label>
             </div>
           
@@ -238,7 +238,7 @@
             <div class="radio">
               <input id="radio-event"
                      type="checkbox"
-                     />
+                     checked/>
               <label class="radio-skin--event" for="radio-event"></label>
             </div>
           
@@ -476,7 +476,7 @@
   
   
   <script type="text/javascript">
-    const timelineData = {"types":["article","app","event"],"posts":[]}
+    const timelineData = {"types":["article","app","event"],"posts":[{"title":"CSS布局","path":"/2024/07/21/CSS%E5%B8%83%E5%B1%80/","icon":"/images/icon/icon-article.svg","type":"article","date":"2024-07-21"},{"title":"Hello world","path":"/2024/07/22/Hello-world/","icon":"/images/icon/icon-article.svg","type":"article","date":"2024-07-22"}]}
     const {types, posts} = timelineData
     listEl = document.querySelector("#timeline-list");
 
